@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <h1 class="title">🌤️ Weather Dashboard</h1>
+      <form id="searchForm">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city name"
+          required
+        />
+        <button class="inputButton" type="submit">Search</button>
+    </form>
+    </nav>
+    <main>
+        <div class="search-history">
+            <h2 class="history-heading">Search History</h2>
+            <ul id="historyList">
+              <!-- Search history items will be dynamically added here -->
+            </ul>
+          </div>
+        <div id="weatherInfo" class="weatherInfo">
+            <!-- Weather data will be dynamically displayed here -->
+7/19/2023
+          </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
